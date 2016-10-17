@@ -9,7 +9,6 @@ import resolve, {ResolveResult} from '../resolve'
 import mkdirp from '../fs/mkdirp'
 import requireJson from '../fs/requireJson'
 import relSymlink from '../fs/relSymlink'
-import exists = require('exists-file')
 import linkBundledDeps from './linkBundledDeps'
 import isAvailable from './isAvailable'
 import installAll from '../installMultiple'
@@ -209,7 +208,7 @@ async function buildToStoreCached (ctx: InstallContext, target: string, buildInf
     return []
   }
 
-  if (!await exists(target) || buildInfo.force) {
+  if (!ctx.store.packages[buildInfo.id] || buildInfo.force) {
     return memoize(ctx.builds, buildInfo.id, async function () {
       await memoize(ctx.fetches, buildInfo.id, () => fetchToStore(ctx, target, buildInfo, log))
       return buildInStore(ctx, target, buildInfo, log)
