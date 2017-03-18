@@ -1,7 +1,7 @@
 {
-  "name": "pnpm",
+  "name": "@zkochan/pnpm",
   "description": "Fast, disk space efficient npm installs",
-  "version": "0.62.0",
+  "version": "0.62.4",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
   "bin": {
     "pnpm": "lib/bin/pnpm.js"
@@ -33,7 +33,7 @@
     "camelcase-keys": "4.0.0",
     "common-tags": "1.4.0",
     "cross-spawn": "^5.0.0",
-    "execa": "0.6.1",
+    "execa": "0.6.0",
     "find-up": "2.1.0",
     "fs-write-stream-atomic": "1.0.10",
     "get-link-target": "1.0.0",
@@ -51,7 +51,7 @@
     "mkdirp-promise": "5.0.1",
     "mz": "2.6.0",
     "ndjson": "1.5.0",
-    "node-gyp": "3.6.0",
+    "node-gyp": "3.5.0",
     "normalize-path": "2.0.1",
     "normalize-ssh": "1.0.0",
     "npm-package-arg": "4.2.1",
