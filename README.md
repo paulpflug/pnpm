@@ -1,4 +1,6 @@
-# pnpm
+<p align="center">
+  <img alt="Lerna" src="http://i.imgur.com/cRZIcfx.png">
+</p>
 
 [![Status](https://travis-ci.org/pnpm/pnpm.svg?branch=master)](https://travis-ci.org/pnpm/pnpm "See test builds")
 [![Windows build status](https://ci.appveyor.com/api/projects/status/f7437jbcml04x750/branch/master?svg=true)](https://ci.appveyor.com/project/zkochan/pnpm-17nv8/branch/master)
