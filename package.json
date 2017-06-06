@@ -108,7 +108,7 @@
     "tape": "^4.6.3",
     "tape-promise": "^2.0.1",
     "thenify": "^3.2.1",
-    "ts-node": "^3.0.0",
+    "ts-node": "^3.0.5",
     "tslint": "^5.4.2",
     "typescript": "^2.1.5",
     "validate-commit-msg": "^2.7.0"
