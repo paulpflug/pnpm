@@ -183,7 +183,7 @@ function fetchToStore (opts: {
 
       await Promise.all([
         // fetchingFilse shouldn't care about when this is saved at all
-        !targetExists && writeJsonFile(path.join(target, 'integrity.json'), dirIntegrity),
+        !targetExists && writeJsonFile(path.join(target, 'integrity.json'), dirIntegrity, {indent: null}),
         async function () {
           let pkg: Package
           if (opts.pkg) {

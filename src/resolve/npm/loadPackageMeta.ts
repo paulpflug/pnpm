@@ -101,7 +101,7 @@ async function loadMeta (pkgMirror: string): Promise<PackageMeta | null> {
 }
 
 function saveMeta (pkgMirror: string, meta: PackageMeta): Promise<PackageMeta> {
-  return writeJsonFile(path.join(pkgMirror, META_FILENAME), meta)
+  return writeJsonFile(path.join(pkgMirror, META_FILENAME), meta, {indent: null})
 }
 
 /**
